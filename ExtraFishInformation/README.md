@@ -1,4 +1,4 @@
-# Extra Fish Information [1.1.0]
+# Extra Fish Information [1.1.1]
 
 This mod adds extra info to the descriptions for each fish, which will help you find the fish you're hoping to catch!
 
@@ -31,12 +31,12 @@ The mod should work fine with [Teh's Fishing Overhaul](https://www.nexusmods.com
 
 ## Known issues/bugs
 - Fish caught in the Night Market will have location "?"
-- **Only works for the English localisation!** There are currently some issues when using other localisations of the game.
 - Please report any other bugs you find on the bugs page. :)
 
 ## Version history
 - 1.0.0: Initial release
 - 1.1.0: Added configuration ability to choose between 24 hour time and 12 hour time
+- 1.1.1: Fixed localisation issue, should now provide info correctly for non-English localisations (please note that the extra info will still be in English)
 
 ## Source code
 Source code is available on my [GitHub](https://github.com/ceasg/StardewValleyMods).

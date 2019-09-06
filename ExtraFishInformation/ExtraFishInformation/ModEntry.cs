@@ -42,7 +42,7 @@ namespace ExtraFishInformation
             }
             catch (Exception e)
             {
-                this.Monitor.Log($"There was an error with parsing config.json. 24 hour time will be used for fish info, by default.", LogLevel.Warn);
+                this.Monitor.Log($"There was an error with parsing config.json. 24 hour time will be used for fish info, by default.", LogLevel.Error);
             }
 
             // read in required data files
@@ -76,11 +76,11 @@ namespace ExtraFishInformation
 
                 // get info from Fish
                 string fishItemInfo = fishInfo[fishId];  // get individual fish info 
-                string[] fishInfoSections = fishItemInfo.Split('/');  // sections are 0-12 for all except trapper fish which are 0-6 [see sdv wiki for more info]
+                string[] fishInfoSections = fishItemInfo.Split('/');  // sections are 0-12 (or 0-13 for localisations) for all except trapper fish which are 0-6 (or 0-7 for localisations) [see sdv wiki for more info]
                 string newDescription;
 
                 // handle each fish
-                if (fishInfoSections.Length != 13) // handle trapper fish
+                if ((fishInfoSections.Length == 7) || (fishInfoSections.Length == 8)) // handle trapper fish
                 {
                     string location = fishInfoSections[4];
                     string extraInfo = $" Found in the {location}.";
