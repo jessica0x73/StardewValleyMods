@@ -1,6 +1,6 @@
 {
-    "new-description.trapper.fish": "Пойман в {{location}}.",
-    "new-description.normal.fish": "Пойман {{weather}} с {{schedule}}.\n\nМесто:\n{{locations}}",
+    "new-description.trapper.fish": "Ловится в {{location}}.",
+    "new-description.normal.fish": "Ловится {{weather}} с {{schedule}}.\n\nМесто:\n{{locations}}",
 
     "location.freshwater": "пресная вода",
     "location.ocean": "океан",
@@ -16,13 +16,13 @@
     "time.afternoon.12hour": "{{hour}}pm",
 	"time.afternoon.12hour.minutes": "{{hour}}.{{minutes}}pm",
 
-    "season.spring": "Весна",
-    "season.summer": "Лето",
-    "season.fall": "Осень",
-    "season.winter": "Зима",
+    "season.spring": "Весной",
+    "season.summer": "Летом",
+    "season.fall": "Осенью",
+    "season.winter": "Зимой",
 
     "weather.sunny": "в ясный день",
     "weather.rainy": "в дождливый день",
     "weather.both": "при любой погоде",
-    "weather.unknown": "при не известных условиях"
+    "weather.unknown": "при неизвестных условиях"
 }
